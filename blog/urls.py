@@ -9,4 +9,6 @@ app_name = 'blog'
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('chapter/get-child/<int:pk>/', views.ChapterViewSet.as_view({'get': 'get_child'})),
+    path('chapter/get-parent/<int:pk>/', views.ChapterViewSet.as_view({'get': 'get_parent'}))
 ]
