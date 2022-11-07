@@ -46,16 +46,6 @@ class ChapterViewSet(viewsets.ModelViewSet):
 
 
 
-    # import pdb;pdb.set_trace()
-    # s = Chapter.objects.filter(pk = 11).get_descendants(include_self = True)
-    # Chapter.objects.filter(pk = 11).get_ancestors(include_self = True)
-
-    # def retrieve(self, request, pk=None):
-    #     import pdb;pdb.set_trace()
-    #     queryset = Chapter.objects.get()
-    #     serializer = ChapterSerializer(queryset, pk = pk)
-    #     return Response(serializer.data)
-
 
 
 
