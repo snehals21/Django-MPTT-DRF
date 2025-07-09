@@ -11,6 +11,7 @@ class Book(models.Model):
 
 
 class Chapter(MPTTModel):
+    """ We have utilized the MPTTModel for parent and node link. """
     book = models.ForeignKey(Book, on_delete=models.CASCADE, related_name='books')
     parent = TreeForeignKey('self', on_delete=models.CASCADE,
                             null=True, blank=True, related_name='children')
